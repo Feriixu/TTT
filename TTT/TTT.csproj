@@ -47,12 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Client.Designer.cs">
-      <DependentUpon>Client.cs</DependentUpon>
-    </Compile>
     <Compile Include="TTTOEnd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,9 +90,6 @@
     <Compile Include="TTTXEnd.Designer.cs">
       <DependentUpon>TTTXEnd.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Client.resx">
-      <DependentUpon>Client.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TTTOEnd.resx">
       <DependentUpon>TTTOEnd.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,9 +158,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LIKE.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\XS Project - Bochka Bass Kolbaser [Bass Boosted] %28Russian Spec.wav" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\slav1.jpg" />

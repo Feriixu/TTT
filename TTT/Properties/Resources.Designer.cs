@@ -61,15 +61,6 @@ namespace TTT.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.IO.UnmanagedMemoryStream ähnlich wie System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream bass {
-            get {
-                return ResourceManager.GetStream("bass", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap bg {
@@ -132,9 +123,9 @@ namespace TTT.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap O_old {
+        internal static System.Drawing.Bitmap O_slav {
             get {
-                object obj = ResourceManager.GetObject("O_old", resourceCulture);
+                object obj = ResourceManager.GetObject("O_slav", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -162,9 +153,9 @@ namespace TTT.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap X_old {
+        internal static System.Drawing.Bitmap X_slav {
             get {
-                object obj = ResourceManager.GetObject("X_old", resourceCulture);
+                object obj = ResourceManager.GetObject("X_slav", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

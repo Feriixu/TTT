@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using RAT_Client;
 
 namespace TTT
 {
@@ -17,7 +16,6 @@ namespace TTT
         private int activePlayer, XgamesWon, OgamesWon, movesLeft, A1, A2, A3, B1, B2, B3, C1, C2, C3;
         private bool winner, gameIsSingleplayer, gameStoryEnabled, resetFieldOnPlayerCheck;
         DialogResult result; //Variable um das Ergebnis des Dialoges zu speichern
-        public System.Media.SoundPlayer musicPlayer = new System.Media.SoundPlayer(Properties.Resources.bass);
 
 
 
@@ -32,7 +30,7 @@ namespace TTT
 
         private void TTTgame_Load(object sender, EventArgs e) //Beim laden des Fensters
         {
-            musicPlayer.Play();
+            
             //Wenn der Storymodus aktiviert ist wird das Story Fenster vor dem Spiel Angezeigt angezeigt
             if (this.gameStoryEnabled)
             {
@@ -71,7 +69,7 @@ namespace TTT
 
         private void TTTgame_FormClosed(object sender, FormClosedEventArgs e)
         {
-            musicPlayer.Stop();
+            
         }
 
         private void resetForm() //Setzt alle Variablen auf den Standard zurück (Initialisierung / RE-Initialisierung)
