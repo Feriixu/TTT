@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{433AF308-348B-4CAD-BAFE-0AC2FE9E5B6F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TTT</RootNamespace>
+    <AssemblyName>TTT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTTOEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTTOEnd.Designer.cs">
+      <DependentUpon>TTTOEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTTstory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTTstory.Designer.cs">
+      <DependentUpon>TTTstory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TTTcredits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTTcredits.Designer.cs">
+      <DependentUpon>TTTcredits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTTgame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTTgame.Designer.cs">
+      <DependentUpon>TTTgame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTTmain.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TTTstart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTTstart.Designer.cs">
+      <DependentUpon>TTTstart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTTXEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTTXEnd.Designer.cs">
+      <DependentUpon>TTTXEnd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTTOEnd.resx">
+      <DependentUpon>TTTOEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTTstory.resx">
+      <DependentUpon>TTTstory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTTcredits.resx">
+      <DependentUpon>TTTcredits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTTgame.resx">
+      <DependentUpon>TTTgame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTTstart.resx">
+      <DependentUpon>TTTstart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTTXEnd.resx">
+      <DependentUpon>TTTXEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ende.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zwischendingsda2mitOhren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepe2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LIKE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XS Project - Bochka Bass Kolbaser [Bass Boosted] %28Russian Spec.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slav1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slav2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
